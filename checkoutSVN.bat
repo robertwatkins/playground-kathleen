@@ -1,2 +1,2 @@
 cd ~\Projects
-svn checkout https://playground-turner.googlecode.com/svn/trunk/ playground-kathleen --username robert@watkins.net
+svn checkout https://playground-kathleen.googlecode.com/svn/trunk/ playground-kathleen --username robert@watkins.net
