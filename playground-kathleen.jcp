@@ -30,6 +30,15 @@
 				<path>src</path>
 			</folderitem>
 			<fileitem>
+				<path>addSVN.bat</path>
+			</fileitem>
+			<fileitem>
+				<path>checkoutSVN.bat</path>
+			</fileitem>
+			<fileitem>
+				<path>commitSVN.bat</path>
+			</fileitem>
+			<fileitem>
 				<path>src\playground-kathleen.java</path>
 				<folder>src</folder>
 			</fileitem>
