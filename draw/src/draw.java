@@ -56,7 +56,7 @@ public class draw extends JFrame{
             // length equal to 1/3 of the original line.  The outer third
             // segments are drawn along the direction of the original line.
             // The middle segment is thrown out and replaced with 2 lines
-            // drawn as part of an isosolece triangle.  It will look 
+            // drawn as part of an equilateral triangle.  It will look 
             // something like this.
             //    original line                    segmented line.
             //                                         /\
@@ -107,7 +107,7 @@ public class draw extends JFrame{
        automatically whenever the frame needs to be redrawn,
        like when it it made visible or moved or whatever.*/
     public void paint(Graphics g){
-       // These draw the 3 lines of the isosoleces triangle
+       // These draw the 3 lines of the equilateral triangle
        // used in the recursive procedure.
        DrawLine( 75,200,625,200, steps,g); 
        DrawLine(625,200,350,676, steps,g); 
