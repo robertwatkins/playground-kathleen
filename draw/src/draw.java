@@ -7,14 +7,9 @@
  * @version 1.00 2015/1/3
  */
  
-/* BasicFrame.java
-
-  This is a really simple graphics program.
-  It opens a frame on the screen with a single
-  line drawn across it.
-
-  It's not very polished, but it demonstrates
-  a graphical program as simply as possible.mag-27Apr2008
+/* 
+  This program will draw a 'Koch Snowflake'.  This is a 
+  fractal implimented as a recursive procedure.
 */
 
 // Import the basic graphics classes.
