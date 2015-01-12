@@ -3,7 +3,8 @@
  *
  * playground-kathleen application
  *
- * @author 
+ * @author Many people 
+ * 
  * @version 1.00 2014/12/25
  */
  
