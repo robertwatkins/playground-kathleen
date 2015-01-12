@@ -19,7 +19,7 @@
 			<applet_ref/>
 			<debugger_ref/>
 			<param/>
-			<run/>
+			<run>WeatherWizard</run>
 			<verify>true</verify>
 		</runtime>
 	</runtimes>
@@ -42,7 +42,7 @@
 				<path>commitSVN.bat</path>
 			</fileitem>
 			<fileitem>
-				<path>src\playground-kathleen.java</path>
+				<path>src\playgroundKathleen.java</path>
 				<folder>src</folder>
 			</fileitem>
 			<fileitem>
