@@ -1,2 +1,0 @@
-C:\Users\watkrob\Projects\playground-kathleen\src\playgroundKathleen.java
-C:\Users\watkrob\Projects\playground-kathleen\src\WeatherWizard.java
