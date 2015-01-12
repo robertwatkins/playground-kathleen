@@ -29,6 +29,9 @@
 			<folderitem>
 				<path>src</path>
 			</folderitem>
+			<folderitem>
+				<path>src\images</path>
+			</folderitem>
 			<fileitem>
 				<path>addSVN.bat</path>
 			</fileitem>
@@ -41,6 +44,26 @@
 			<fileitem>
 				<path>src\playground-kathleen.java</path>
 				<folder>src</folder>
+			</fileitem>
+			<fileitem>
+				<path>src\WeatherWizard.java</path>
+				<folder>src</folder>
+			</fileitem>
+			<fileitem>
+				<path>src\images\weather-cloud.png</path>
+				<folder>src\images</folder>
+			</fileitem>
+			<fileitem>
+				<path>src\images\weather-rain.png</path>
+				<folder>src\images</folder>
+			</fileitem>
+			<fileitem>
+				<path>src\images\weather-snow.png</path>
+				<folder>src\images</folder>
+			</fileitem>
+			<fileitem>
+				<path>src\images\weather-sun.png</path>
+				<folder>src\images</folder>
 			</fileitem>
 		</include>
 	</files>
