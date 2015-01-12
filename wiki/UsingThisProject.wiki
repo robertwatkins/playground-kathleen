@@ -21,4 +21,4 @@ If you have already performed an initial checkout, your first task you will do e
 = Commit =
 When you have changes you want to save in the repository, you use 'commit'. This will allow others to see your work when they do their own 'update'.
 
-https://playground-kathleen.googlecode.com/svn/info/save_changes.swf Watch Commit Video]
+[https://playground-kathleen.googlecode.com/svn/info/save_changes.swf Watch Commit Video]
