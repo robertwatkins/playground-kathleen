@@ -4,6 +4,7 @@ class tictactoe {
 	static String[][] gameBoard = new String[3][3];
 	static boolean debug = true;
 	static Scanner in = new Scanner(System.in);
+	static String currentPlayer = "";
 	
 	private static void initializeGameBoard() {
 		// set 2d array to sequence of numbers.
@@ -18,6 +19,7 @@ class tictactoe {
 		}
 	}
 	
+
 	private static void printGameBoard() {
 		// output the current state of the board to the console.
 		for (int i=0;i<3;i++){
@@ -40,26 +42,41 @@ class tictactoe {
 	}
 	
 	private static boolean isADraw () {
-		
+		//assume the game is a draw, if any square is not an 'X' or an 'O', then it is not over
+		//This method assumes no winner is found
 		boolean result=true;
 		for (int i=0;i<3;i++){
 			for (int j=0;j<3;j++){
 				if ((!gameBoard[j][i].equals("X") ) && (!gameBoard[j][i].equals("O"))){
 					result=false;
 				}
+				if (debug) {
+					System.out.print(", ("+j+"," + i + ")="+gameBoard[j][i]+":"+result);
+				}
 			}
 		}
-		
+		if (debug){
+			System.out.println();
+		}
 		return result;
 	}
 	
 	private static void takeTurn(String player){
-		System.out.print("Enter a number player "+player+": ");
 		
-        String locationString = in.nextLine();
+		//read input from the console and convert it to an integer
+		//replace the corresponding square of the board with the player's mark
+		//don't let a user put there mark where someone else already has one (that would be cheating) :)
+		System.out.print("Enter a number player "+player+": ");
+		String locationString="0";
+
+		//the program will crash here if a user presses 'enter' without a value.
+		//TODO-fix crashing bug :)
+        locationString = in.nextLine();
+
         if (locationString.length()==0){
         	takeTurn(player);
         }
+        if (debug) {System.out.println("read: "+locationString+ ", size: "+ locationString.length());  }
         int location = Integer.parseInt(locationString);
            	
 		if (debug) { System.out.println("user selected :"+location); }
@@ -80,19 +97,39 @@ class tictactoe {
 	
 	private static String getWinner() {
 		//when we have a winner, find that winner
+		//TODO: need to write code. This is just a stub
 		return "-";
 	}
+	
+	private static String switchPlayer(String player) {
+		//given the mark of the current player, return the mark of the other player.
+    	if (player=="X") {
+				player = "O";
+			} else {
+				player ="X";
+		}
+		return player;
+	}
 		
+	private static void printInstructions() {
+		//These could be longer :)
+		System.out.println("Select the number of the square you want to play and press [ENTER]");
+		return;
+	}
+	
 	private static void cleanUp(){
+		//stop listening for input from the console.
 		in.close();  
 	}	
+		
 	public static void main(String[] args) {
     	initializeGameBoard();
+    	printInstructions();
     	printGameBoard();
+    	String currentPlayer="X";
     	while (!isAWinner() && !isADraw()){
-    		takeTurn("X");
-    		printGameBoard();
-    		takeTurn("O");
+    		currentPlayer = switchPlayer(currentPlayer);
+    		takeTurn(currentPlayer);
     		printGameBoard();
     	}
     	if (isAWinner()){
