@@ -33,16 +33,11 @@
 				<path>src\images</path>
 			</folderitem>
 			<fileitem>
-				<path>addSVN.bat</path>
-			</fileitem>
-			<fileitem>
-				<path>checkoutSVN.bat</path>
-			</fileitem>
-			<fileitem>
-				<path>commitSVN.bat</path>
-			</fileitem>
-			<fileitem>
 				<path>src\playgroundKathleen.java</path>
+				<folder>src</folder>
+			</fileitem>
+			<fileitem>
+				<path>src\tictactoe.java</path>
 				<folder>src</folder>
 			</fileitem>
 			<fileitem>
@@ -67,5 +62,18 @@
 			</fileitem>
 		</include>
 	</files>
-	<tasks/>
+	<tasks>
+		<todotaskitem>
+			<description>TODO-fix crashing bug :)</description>
+			<filepath>src\tictactoe.java</filepath>
+			<line>75</line>
+			<timestamp>1421541769</timestamp>
+		</todotaskitem>
+		<todotaskitem>
+			<description>TODO: need to write code. This is just a stub</description>
+			<filepath>src\tictactoe.java</filepath>
+			<line>102</line>
+			<timestamp>1421541769</timestamp>
+		</todotaskitem>
+	</tasks>
 </project>
