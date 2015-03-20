@@ -1,3 +1,8 @@
+The URL for this site will be changing to GitHub because code.google.com is shutting down. I'll add the link here when I have it.
+
+Meanwhile, please do not edit the code here.
+
+
 = A bit about source code control =
 Not only does source code control keep your files backed up for safe storage, it also allows you to collaborate on projects with others without worrying too much about overwriting other people's work. 
 
