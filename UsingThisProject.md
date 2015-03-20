@@ -1,6 +1,4 @@
-The URL for this site will be changing to GitHub because code.google.com is shutting down. I'll add the link here when I have it.
-
-Meanwhile, please do not edit the code here.
+The Source Code Instructions have changed with the move to GitHub. I'll edit when I can.
 
 
 # A bit about source code control #
